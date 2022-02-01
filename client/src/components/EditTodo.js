@@ -41,12 +41,7 @@ const EditTodo = ({todo}) => {
                         <div class="modal-header">
                         <h4 class="modal-title">Edit Todo</h4>
                         <button 
-                        type="button" 
-                        class="close" 
-                        data-dismiss="modal" 
-                        onClick={() => setDescription(todo.description)}
-                        >
-                            &times;
+                        type="button" class="close" data-dismiss="modal" onClick={() => setDescription(todo.description)}>&times;
                         </button>
                 </div>
     
@@ -57,21 +52,11 @@ const EditTodo = ({todo}) => {
     
                 <div class="modal-footer">
                     <button 
-                    type="button" 
-                    class="btn btn-warning" 
-                    data-dismiss="modal"
-                    onClick= {e => updateDescription(e)}
-                    >
-                        Edit
-                    </button>
+                    type="button" class="btn btn-warning" data-dismiss="modal"onClick= {e => updateDescription(e)}>Edit</button>
+                        
+                    
                     <button 
-                    type="button" 
-                    class="btn btn-danger" 
-                    data-dismiss="modal"
-                    onClick={() => setDescription(todo.description)}
-                    >
-                        Close
-                    </button>
+                    type="button" class="btn btn-danger" data-dismiss="modal" onClick={() => setDescription(todo.description)}>Close</button>
                 </div>
                 </div>
             </div>
